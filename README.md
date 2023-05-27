@@ -15,11 +15,13 @@ RaQFive is a project aimed at restoring and repurposing Cobalt RaQ servers. This
 Cobalt RaQ servers were once popular web hosting appliances in the early 2000s. However, with advancements in software and hardware, these servers became outdated and were eventually abandoned. The RaQFive project aims to revive these machines by retrofitting them with new hardware.  A retrofitted RaQFive server will be an ideal platform for running a web server stack or serving as a development environment.
 
 ## Hardware
-The RaQFive project is a combination of open hardware and software components to replace proprietary parts of the Cobalt RaQ platform.  The motherboard will use a StarFive VisionFive 2 RISC-V Single Board Computer.  The VisionFive 2 is comparable in performance to a Raspberry Pi 4 but offers more connectivity options and interfaces in the form of dual Gigabit Ethernet, NVMe storage, and eMMC.
+The RaQFive project is a combination of open hardware and software components to replace proprietary parts of the Cobalt RaQ platform.
 
-The Cobalt RaQ's front panel featured an integrated 1602 LCD display and menu buttons for monitoring and servicing the system.  The original system's front panel board connected to the motherboard via a parallel interface with a ribbon cable.
+The motherboard will be a StarFive VisionFive 2 RISC-V Single Board Computer.  The RISC-V architecture was specifically chosen to bring the Cobalt RaQ back to its roots as a RISC system, as the original RaQ and RaQ 2 were based on the MIPS R5000 processor.  The VisionFive 2 is comparable in performance to a Raspberry Pi 4 but offers more connectivity options and interfaces in the form of dual Gigabit Ethernet, NVMe storage, and eMMC.
 
-The RaQFive will replace the front panel components with modern equivalents - a newer 1602 LCD, status LEDs, and menu buttons, all interfacing with the VisionFive 2 over the two-wire I2C protocol.  Additionally, the front panel will also provide a hardware clock RTC module over I2C to maintain the system clock across reboots.
+The Cobalt RaQ's front panel featured an integrated 1602 LCD display and menu buttons for monitoring and servicing the system.  The original system's front panel was connected via a parallel interface with a ribbon cable.
+
+The RaQFive will replace all of the front panel components with modern equivalents - a newer 1602 LCD, status LEDs, and menu buttons, all interfacing with the system over the two-wire I2C protocol.  Additionally, the front panel will also provide a hardware clock RTC module over I2C to maintain the system clock across reboots.
 
 All of the hardware designs for the RaQFive, including a modified front panel LCD bracket and the front panel PCB, will be released under the CERN Open Hardware License.  All CAD models, schematics, and PCB layouts will be made available to allow anyone to build their own RaQFive system.
 
