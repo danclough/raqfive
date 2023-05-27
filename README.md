@@ -5,11 +5,10 @@ A project to restore and repurpose Cobalt RaQ servers as a modern low-power web 
 RaQFive is a project aimed at restoring and repurposing Cobalt RaQ servers. This project seeks to breathe new life into this legacy form factor by transforming a RaQ server into a functional server appliance with a fast and open RISC-V processor and a modern, secure operating system.
 
 ## Table of Contents
-
-    Introduction
-    Usage
-    Contributing
-    License
+* [Introduction](./#Introduction)
+* [Usage](./#Usage)
+* [Contributing](./#Contributing)
+* [License](./#License)
 
 ## Introduction
 
